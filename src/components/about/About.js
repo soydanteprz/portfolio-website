@@ -56,7 +56,7 @@ export default function About() {
             <Terminal text={aboutMeText()}/>
             <Terminal text={skillsText()}/>
             <Terminal text={miscText()}/>
-            <WorldCloud/>
+            <WordCloud/>
         </Box>
     )
 }
