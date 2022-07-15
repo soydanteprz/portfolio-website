@@ -3,6 +3,7 @@ import Style from './About.module.scss';
 import Terminal from "./Terminal";
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
+import WordCloud from './Skills'; 
 
 
 export default function About() {
@@ -55,6 +56,7 @@ export default function About() {
             <Terminal text={aboutMeText()}/>
             <Terminal text={skillsText()}/>
             <Terminal text={miscText()}/>
+            <WorldCloud/>
         </Box>
     )
 }
