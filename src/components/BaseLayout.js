@@ -3,6 +3,7 @@ import Style from './BaseLayout.module.scss'
 import Navbar from "./Navbar";
 import Home from "./home/Home";
 import About from "./about/About";
+import Contact from './contact/Contact';
 import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
@@ -26,6 +27,7 @@ export default function BaseLayout() {
                   <Route exact path={'/'} element={<Home/>}/>
                   <Route exact path={'/about'} element={<About/>}/>
                   <Route exact path={'/portfolio'} element={<Portfolio/>}/>
+                  <Route exact path={'/contact'} element={<Contact/>}/>
                </Routes>
             </Grid>
             <Grid item>
@@ -33,7 +35,6 @@ export default function BaseLayout() {
                     py={'1.5rem'} sx={{opacity: 0.4}} width={'100%'}>
                   <p>Dante Pérez 2022 Copyright &copy;</p>
                   <p>Dante Pérez´s website is Powered by React Appp</p>
-                  <p>template created with &hearts; by <a href={'https://paytonpierce.dev'}>Payton Pierce</a></p>
                   <p>&copy; 2022</p>
                </Box>
             </Grid>
